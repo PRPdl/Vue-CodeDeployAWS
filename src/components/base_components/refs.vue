@@ -10,6 +10,7 @@
     <p><a href="#" @click.prevent="handleClick">www.noevil.com</a></p>
     <p v-blink>This should blink.</p>
     <button @click="divVisible = !divVisible">Toggle visibility</button>
+    
   </div>
 </template>
 

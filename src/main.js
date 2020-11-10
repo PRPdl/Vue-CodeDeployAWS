@@ -1,24 +1,31 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import App from './App'
-import router from './router'
+import Vue from 'vue';
+import App from './App';
+import BootstrapVue from 'bootstrap-vue';
+import router from './router/index';
+import store from './store';
 import './assets/filter/filter.js'
-import '@/globalComponents'
+import '@/globalComponents';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+
 
 Vue.config.productionTip = false
 
+
+Vue.use(BootstrapVue);
+
 /* eslint-disable no-new */
-Vue.component('custom-header', {
-  template: '<h1>This is Global custom Component  </h1>'
-});
 
 new Vue({
   el: '#app',
   router,
+  store,
+  BootstrapVue,
   components: { App },
   template: '<App/>'
 });
-
 
 

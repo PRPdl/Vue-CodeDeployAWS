@@ -3,7 +3,6 @@
      
     <span>Email: <input type="text" :value="value" @input="handleInput"></span>
     <p>{{ value }}</p>
-    <p><slot></slot></p>
 
   </div>
 </template>
