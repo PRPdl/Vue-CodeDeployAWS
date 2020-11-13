@@ -23,9 +23,9 @@
 </template>
 
 <script>
-import selectOption from './base_components/selectOption.vue';
-import colorBar from './base_components/colorBar.vue';
-import MyTest from './base_components/MyTest.vue';
+import selectOption from '@/components/base_components/selectOption.vue';
+import colorBar from '@/components/base_components/colorBar.vue';
+
 
 import Vue from 'vue';
 

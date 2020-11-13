@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import test from '@/components/test'
-import main from '@/components/mainComponent'
-import userPage from '@/components/userPage'
+import main from '@/components/random_test/mainComponent'
+import userPage from '@/components/random_test/userPage'
 import NotFound from '@/components/NotFound'
 import profile from '@/components/base_components/profile'
 import store from '@/store'
+
+import todos from '@/components/Todos';
 
 
 Vue.use(Router)
@@ -15,12 +16,11 @@ const router = new Router({
   routes: [
 
     {
-      path: '/test',
-      name: 'test',
-      component: test,
+      path: '/todos',
+      name: 'todos',
+      component: todos,
       meta: {
-        requiresAuth: true,
-        title: 'Test'
+        title: 'Todos'
       }
     },
     {
@@ -31,7 +31,7 @@ const router = new Router({
     {
       path: '/login',
       name: 'login',
-      component: () => import('@/components/login'),
+      component: () => import('@/components/random_test/login'),
       meta: {
         title: "Login"
       }
